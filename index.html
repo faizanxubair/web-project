@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <h1>Muhammad Faizan Zubair</h1>
+      <p>Welcome to my personal portfolio website!</p>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I have over 2 years of experience in web design, creating websites for
+        small businesses, non-profits, and individuals. Proficient in HTML, CSS,
+        and adding interactive features like forms, shopping carts, and social
+        media integration. As an expert QA Automation Engineer, I specialize in
+        using tools like Appium, SpecFlow, Playwright, Cypress, Selenium, and
+        more. Skilled in creating robust frameworks with TestNG, Pytest, and
+        Robot Framework, and performing performance testing with JMeter. Fluent
+        in Python, JavaScript, and Java, I ensure high-quality, timely results.
+      </p>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <div class="project">
+        <h3>Canvas paint</h3>
+        <img src="./project 1.png" alt="Project 1 Image" />
+        <p>
+          Canvas Paint is a simple and intuitive web-based drawing application
+          built using HTML5. It allows users to create and edit drawings
+          directly within their browser, offering various tools like brushes,
+          colors, and shapes for a seamless digital painting experience. The app
+          provides basic functionalities such as freehand drawing, line drawing,
+          color picking, erasing, and clearing the canvas. Designed with a clean
+          and user-friendly interface, Canvas Paint is perfect for casual
+          doodling or creating quick sketches. It is fully responsive and works
+          across different devices, ensuring accessibility on both desktop and
+          mobile platforms.
+        </p>
+      </div>
+      <div class="project">
+        <h3>Travel website</h3>
+        <img src="travel1.png" alt="Project 2 Image" />
+        <p>
+          Travel Explorer is a dynamic and user-friendly travel website designed
+          to help users discover, plan, and book their dream vacations. With a
+          sleek and responsive design, the website provides a seamless browsing
+          experience across all devices. It features detailed destination
+          guides, curated travel itineraries, and an integrated booking system
+          for flights, hotels, and tours. Users can explore popular tourist
+          spots, hidden gems, and read reviews to make informed decisions.
+          Travel Explorer also offers personalized recommendations based on user
+          preferences, helping travelers create customized trips tailored to
+          their interests. Whether you're a solo traveler or planning a family
+          vacation, Travel Explorer makes your travel planning effortless and
+          enjoyable.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form action="submit_form.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required />
+
+        <label for="hobbies">Hobbies:</label>
+        <select id="hobbies" name="hobbies[]" multiple required>
+          <option value="coding">Coding</option>
+          <option value="reading">Reading</option>
+          <option value="gaming">Gaming</option>
+          <option value="travelling">Travelling</option>
+          <option value="travelling">playing cricket</option>
+        </select>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required />
+
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" required />
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>Connect with me on:</p>
+      <a href="https://www.linkedin.com" target="_blank">LinkedIn</a> |
+      <a href="https://www.github.com" target="_blank">GitHub</a>
+      <p>&copy; 2024 Faizan</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
